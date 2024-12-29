@@ -14,6 +14,17 @@ document.getElementById('btn-add-Money')
 
         document.getElementById('account-balance').innerText = newBalance;
 
+
+        // add to transactions history
+        const p = document.createElement('p');
+        p.innerText =`Added:${addMoney} tk. New Balance: ${newBalance}`;
+        console.log(p);
+
+
+        // should be a common functions 
+        document.getElementById('transaction-container').appendChild(p);
+
+
     }
 
     else{
